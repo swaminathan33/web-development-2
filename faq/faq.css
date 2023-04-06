@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgb(169,104,234),rgb(96,80,205));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    background-color: white;
+    width: 73%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    overflow: hidden;
+}
+.col-5{
+    padding: 2rem 2rem 0 2rem;
+    margin: 0;
+}
+
+.wrapper ul li{
+    list-style: none;
+}
+
+.col-7{
+    width: 30rem;
+    margin-top: 3rem;
+}
+
+.col-7 ul{
+    margin-top: 20px;
+}
+
+.col-7 ul{
+    gap: 20px;
+}
+
+.wrapper ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper ul li a:hover{
+    color: orange;
+}
+
+.col-5 .pattern img{
+    width: 35rem;
+    height: 45rem;
+    position: absolute;
+    right: 40rem;
+    top: -10rem;
+}
+
+.wrapper .girl img{
+    position: absolute;
+    width:25rem;
+    height: 20rem;
+    left: -4rem;
+    top: 4rem;
+}
+
+.box{
+    position: absolute;
+    z-index: 1;
+    left: 3rem;
+    top: 15rem;
+}
+
+hr{
+    position: relative;
+    width: 29rem;
+    left: -0.8rem;
+}
+
+.wrapper .col-7 ul li .downText{
+    font-weight: 700;
+}
+
+.wrapper .col-7 ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#three{
+    color: orange;
+}
