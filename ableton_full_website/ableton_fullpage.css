@@ -1,0 +1,141 @@
+.img1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.img1 img{
+    width: 80%;
+    height: 30rem;
+}
+
+.img1 p{
+    margin-top: 4rem;
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+.vid1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.vid1 p{
+    margin-top: 4rem;
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+/* navbar */
+
+.nav-link{
+    font-weight: 600;
+    color: black;
+}
+
+.try{
+    font-weight: 500;
+    color: purple !important;
+}
+
+.under-navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.under-navbar a span{
+    color: orange;
+}
+
+
+/* body */
+
+/* body  image1 */
+.container_{
+    position: relative;
+    top: -7rem;
+}
+
+.title{
+    color: rgb(223, 81, 81);
+    position: relative;
+    top: 17rem;
+    font-size: 7rem;
+}
+
+.img1 div{
+    margin: 4rem 0 4rem 0;
+    width: 50%;
+    text-align: left;
+}
+
+.img1 div h5{
+    margin-bottom: 2rem;
+}
+
+.img1 div .details{
+    font-size: 15px;
+}
+/* body  video1 */
+
+.container_ video{
+    width: 40rem;
+    height: 30rem;
+}
+
+/* footer */
+
+footer{
+    margin: 0 2rem 0 2rem;
+}
+footer .col1{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col1 a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .col2{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col2 a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .row2{
+    margin-top: 2rem;
+}
+
+footer .col03 div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer a:hover{
+    color: orange;
+}
+
+footer{
+    font-size: 12px;
+}
+
+footer p{
+    font-weight: 600;
+}
+
+.img2{
+    left: 2rem;
+}
