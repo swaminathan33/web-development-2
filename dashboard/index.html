@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/c2268d1458.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="containe max-h-screen">
+    <!---Top navbar -->
+    <section>
+      <div class="flex bg-white align-middle py-3 w-screen">
+        <div class="w-36 mr-20 py-2 ms-3">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="bg-slate-300 p-1 rounded w-96 px-4 py-2">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="bg-transparent ms-2 outline-none" placeholder="search" type="search" />
+        </div>
+        <div class="flex justify-end w-full gap-6">
+          <img src="./images/profile-1.jpg" class="w-10 rounded-2xl" alt="image-circle" />
+          <div class="flex gap-3 me-2">
+            <p class="font-bold">Chu Hua</p>
+            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---left bar -->
+    <div class="flex">
+      <section class="flex flex-col items-center justify-between text-gray-500">
+        <nav>
+          <ul class="flex flex-col gap-4 m-6">
+            <li class=" active flex gap-2 items-center">
+              <i class="fa-sharp fa-solid fa-compass"></i>
+              <span >Dashboard</span>
+            </li>
+            <li class="flex gap-2 items-center">
+              <i class="fa-brands fa-stack-exchange"></i>
+              <span>Exchange</span>
+            </li>
+            <li class="flex gap-2 items-center">
+              <i class="fa-solid fa-wallet"></i>
+              <span>Wallet</span>
+            </li>
+            <li class="flex gap-2 items-center">
+              
+              <i class="fa-solid fa-money-bill-1-wave"></i>
+              <span>Transactions</span>
+            </li>
+            <li class="flex gap-2 items-center">
+              <i class="fa-solid fa-chart-column"></i>
+              <span>Analytics</span>
+            </li>
+            <li class="flex gap-2 items-center">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>Messages</span>
+            </li>
+            <li class="flex gap-2 items-center">
+              <i class="fa-solid fa-circle-question"></i>
+              <span>Help Center</span>
+            </li>
+            <li class="flex gap-2 items-center">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </li>
+          </ul>
+        </nav>
+        <div class="bg-white text-center p-5 rounded-lg mt-20">
+          <div><i class="fa-solid fa-wrench"></i></div>
+          <span class="font-bold text-lg">Updates available</span>
+          <div class="my-3">
+            <p>Security Updates</p>
+            <p>General Updates</p>
+          </div>
+          <button class="bg-blue-800 px-7 text-white py-2 rounded-xl">
+            Update Now
+          </button>
+        </div>
+      </section>
+      <!---Main body -->
+      <section class="main-body ">
+        <div class="flex justify-between ">
+          <!---box 1-->
+          <div class="boxes flex flex-col bg-red-500 p-4 h-fit rounded-3xl m-2 text-white">
+            <div class="flex justify-between gap-16 mt-3">
+              <div class="flex items-center">
+                <img class="w-5 h-5 me-2" src="./images/BTC.png" alt="btc" />
+                <p class="text-white">BTC</p>
+              </div>
+              <img class="w-15 h-5" src="./images/visa.png" alt="visa" />
+            </div>
+            <div class="flex gap-28 mt-6">
+              <h1 class='text-2xl font-bold text-white'>$433,333</h1>
+              <img class="w-10 h-5 ml-11" src="./images/card chip.png" alt="card-image" />
+            </div>
+            <div class="flex gap-28 mt-7">
+              <div class="w-24">
+                <h2>Card Holder</h2>
+                <p>JOHN DOE</p>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <h2>Expiry</h2>
+                  <p>08/23</p>
+                </div>
+                <div>
+                  <h2>CVV</h2>
+                  <p>123</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---box 2-->
+          <div class="boxes flex flex-col bg-gray-600 text-white p-4 h-fit rounded-3xl m-2">
+            <div class="flex justify-between gap-16 mt-3">
+              <div class="flex">
+                <img class="w-5 h-5 me-2" src="./images/ETH.png" alt="btc" />
+                <p>EHT</p>
+              </div>
+              <img class="w-15 h-5" src="./images/visa.png" alt="visa" />
+            </div>
+            <div class="flex gap-28 mt-6">
+              <h1 class="font-bold text-2xl">$433,333</h1>
+              <img class="w-10 h-5 ml-11" src="./images/card chip.png" alt="card-image" />
+            </div>
+            <div class="flex gap-28 mt-7">
+              <div class="w-24">
+                <h2>Card Holder</h2>
+                <p>JOHN DOE</p>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <h2>Expiry</h2>
+                  <p>08/23</p>
+                </div>
+                <div>
+                  <h2>CVV</h2>
+                  <p>123</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---box 3-->
+          <div class="boxes flex flex-col bg-cyan-700 p-4 h-fit rounded-3xl m-2 text-white">
+            <div class="flex justify-between gap-16 mt-3">
+              <div class="flex">
+                <img class="w-5 me-2 h-5" src="./images/BTC.png" alt="btc" />
+                <p>BTC</p>
+              </div>
+              <img class="w-15 h-5" src="./images/visa.png" alt="visa" />
+            </div>
+            <div class="flex gap-28 mt-6">
+              <h1 class="text-2xl font-bold">$433,333</h1>
+              <img class="w-10 h-5 ml-11" src="./images/card chip.png" alt="card-image" />
+            </div>
+            <div class="flex gap-28 mt-7">
+              <div class="w-24">
+                <h2>Card Holder</h2>
+                <p>JOHN DOE</p>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <h2>Expiry</h2>
+                  <p>08/23</p>
+                </div>
+                <div>
+                  <h2>CVV</h2>
+                  <p>123</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between mt-3 mb-2">
+          <div class="mr-1 me-6">
+            <h1 class="font-bold text-xl">Income</h1>
+            <p class="font-semibold">▶ Details</p>
+            <p class="text-gray-500 text-sm">Compared to $26,000 last month</p>
+          </div>
+          <div class="mr-1 me-6">
+            <h1 class="font-bold text-xl">Expenses</h1>
+            <p class="font-semibold">▶ Details</p>
+            <p class="text-gray-500 text-sm">Compared to $26,000 last month</p>
+          </div>
+          <div class="mr-1 me-6">
+            <h1 class="font-bold text-xl">Cashback</h1>
+            <p class="font-semibold">▶ Details</p>
+            <p class="text-gray-500 text-sm">Compared to $26,000 last month</p>
+          </div>
+          <div class="mr-1 me-6">
+            <h1 class="font-bold text-xl">Income</h1>
+            <p class="font-semibold">▶ Details</p>
+            <p class="text-gray-500 text-sm">Compared to $26,000 last month</p>
+          </div>
+
+        </div>
+        <div class="flex mt-4">
+          <h1 class="font-extrabold ">
+            Fast <br> Payment
+          </h1>
+          <div class="ms-5 ">
+            <div class="flex gap-16 mb-2">
+              <p class="bg-white rounded px-3">+</p>
+              <p class="bg-white rounded px-3">Training <span class="ms-5 font-bold">$50</span></p>
+              <p class="bg-white rounded px-3">Internet <span class="ms-5 font-bold">$40</span></p>
+              <p class="bg-white rounded px-3">Gas <span class="ms-5 font-bold">$190</span></p>
+              <p class="bg-white rounded px-3">Movies <span class="ms-5 font-bold">$35</span></p>
+            </div>
+            <div class="flex gap-28">
+              <p class="bg-white rounded px-3">Education <span class="ms-5 font-bold">$999</span></p>
+              <p class="bg-white rounded px-3">Electricity <span class="ms-5 font-bold">$109</span></p>
+              <p class="bg-white rounded px-3">Food <span class="ms-5 font-bold">$399</span></p>
+            </div>
+          </div>
+        </div>
+        <!--Chart Bar-->
+      <div class="flex justify-center mt-5 ms-16 h-52">
+        <canvas id="myChart" class="bg-white p-5 rounded-2xl"></canvas>
+      </div>
+      </section>
+      <!--- right bar -->
+      <div>
+        <section>
+          <div class="bg-white ml-24 mt-1 rounded-xl p-2 w-fit">
+            <!--Text 1-->
+            <div>
+              <h1 class="font-extrabold text-2xl">Investments</h1>
+              <ul class="">
+                <li class="flex gap-4 p-2 mr-1 ">
+                  <div class="flex flex-col items-center">
+                    <img class="w-8 mr-3 mb-2" src="images/uniliver.png" alt="">
+                    <h1 class="font-bold">Unilever</h1>
+                  </div>
+                  <div>
+                    <p>7 Nov 2021</p>
+                    <p>9:34 pm</p>
+                  </div>
+                  <div>
+                    <p>1402</p>
+                    <p>Bonds</p>
+                  </div>
+                  <div>
+                    <p>$20,033</p>
+                    <p>-42%</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Text 2-->
+            <div>
+              <ul class="">
+                <li class="flex gap-4 p-2 mr-1 ">
+                  <div class="flex flex-col items-center">
+                    <img class="w-8 mr-3" src="images/tesla.png" alt="">
+                    <h1 class="font-bold">Tesla</h1>
+                  </div>
+                  <div class="ms-5">
+                    <p>7 Nov 2021</p>
+                    <p>9:34 pm</p>
+                  </div>
+                  <div>
+                    <p>1402</p>
+                    <p>Bonds</p>
+                  </div>
+                  <div>
+                    <p>$20,033</p>
+                    <p>-42%</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Text 3-->
+            <div>
+              <ul class="">
+                <li class="flex gap-4 p-2 mr-1 ">
+                  <div class="flex flex-col items-center">
+                    <img class="w-8 mr-3" src="images/monster.png" alt="">
+                    <h1 class="font-bold">Monster</h1>
+                  </div>
+                  <div class="ms-2">
+                    <p>7 Nov 2021</p>
+                    <p>9:34 pm</p>
+                  </div>
+                  <div>
+                    <p>1402</p>
+                    <p>Bonds</p>
+                  </div>
+                  <div>
+                    <p>$20,033</p>
+                    <p>-42%</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Text 4-->
+            <div>
+              <ul class="">
+                <li class="flex gap-4 p-2 mr-1 ">
+                  <div class="flex flex-col items-center">
+                    <img class="w-7 mr-2" src="images/mcdonalds.png" alt="">
+                    <h1 class="font-bold">McDonald</h1>
+                  </div>
+                  <div class="w-24">
+                    <p>7 Nov 2021</p>
+                    <p>9:34 pm</p>
+                  </div>
+                  <div>
+                    <p>1402</p>
+                    <p>Bonds</p>
+                  </div>
+                  <div>
+                    <p>$20,033</p>
+                    <p>-42%</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="ml-24 mt-5 flex flex-col">
+          <div class="flex justify-between">
+            <h1 class="font-extrabold text-2xl">Recent Transactions</h1>
+            <div class="flex items-center gap-2">
+              <h1>More</h1>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <!---Line 1-->
+          <div class="mt-2">
+            <ul>
+              <li class="flex justify-between">
+                <div>
+                  <h1 class="font-bold">Music</h1>
+                  <p class="text-zinc-500">20.11.2021</p>
+                </div>
+                <div>
+                  <h1 class="text-zinc-500">*2757</h1>
+                  <p class="text-zinc-500">Credit Card</p>
+                </div>
+                <div class="flex items-center font-bold"><span>-$20</span></div>
+              </li>
+            </ul>
+          </div>
+          <!---Line 2-->
+          <div class="mt-2">
+            <ul>
+              <li class="flex justify-between">
+                <div>
+                  <h1 class="font-bold">Shopping</h1>
+                  <p class="text-zinc-500">20.11.2021</p>
+                </div>
+                <div>
+                  <h1 class="text-zinc-500">*1920</h1>
+                  <p class="text-zinc-500">Credit Card</p>
+                </div>
+                <div class="flex items-center font-bold"><span>-$799</span></div>
+              </li>
+            </ul>
+          </div>
+          <!---Line 3-->
+          <div class="mt-2">
+            <ul>
+              <li class="flex justify-between">
+                <div>
+                  <h1 class="font-bold">Restaurant</h1>
+                  <p class="text-zinc-500">02.12.2021</p>
+                </div>
+                <div>
+                  <h1 class="text-zinc-500">*8273</h1>
+                  <p class="text-zinc-500">Credit Card</p>
+                </div>
+                <div class="flex items-center font-bold"><span>-$50</span></div>
+              </li>
+            </ul>
+          </div>
+          <!---Line 4-->
+          <div class="mt-2">
+            <ul>
+              <li class="flex justify-between">
+                <div>
+                  <h1 class="font-bold">Games</h1>
+                  <p class="text-zinc-500">20.11.2021</p>
+                </div>
+                <div>
+                  <h1 class="text-zinc-500">*2757</h1>
+                  <p class="text-zinc-500">Credit Card</p>
+                </div>
+                <div class="flex items-center font-bold"><span>-$44</span></div>
+              </li>
+            </ul>
+          </div>
+          <!---Line 5-->
+          <div class="mt-2">
+            <ul>
+              <li class="flex justify-between">
+                <div>
+                  <h1 class="font-bold">Pharmacy</h1>
+                  <p class="text-zinc-500">20.11.2021</p>
+                </div>
+                <div>
+                  <h1 class="text-zinc-500">*1920</h1>
+                  <p class="text-zinc-500">Credit Card</p>
+                </div>
+                <div class="flex items-center font-bold"><span>-$30</span></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
